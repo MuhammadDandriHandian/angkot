@@ -24,16 +24,32 @@
 // }
 
 // tambahan ada satu angkot sedang lembur, buat menggunakan else if
+
+// var jmlAngkot = 10;
+// var beroperasi = 4;
+
+// for(angkot = 1; angkot <= jmlAngkot; angkot++){
+//     if(angkot <= beroperasi){
+//         console.log("Angkot No. " + angkot + " sedang beroperasi");
+//     } else if(angkot == 6 || angkot == 8){
+//         console.log("Angkot No. " + angkot + " sedang lembur");
+//     } else{
+//         console.log("Angkot No. " + angkot + " sedang tidak beroperasi");
+//     }
+// }
+
+// pake while
 var angkot = 1;
 var jmlAngkot = 10;
-var beroperasi = 4;
+var beroperasi = 5
 
-for (angkot; angkot <= jmlAngkot; angkot++){
+while (angkot <= jmlAngkot){
     if (angkot <= beroperasi){
-        console.log("Angkot No. " +angkot+ " sedang beroperasi");
-    } else if (angkot == 6) {
+        console.log("Angkot No. " +angkot+ " siap beroperasi");
+    } else if (angkot == 8 || angkot == 10){
         console.log("Angkot No. " +angkot+ " sedang lembur");
     } else {
-        console.log("Angkot No. " +angkot+ " sedang tidak beroparsi");
+        console.log("Angkot No. " +angkot+ " sedang tidak dapat beroperasi");
     }
-}   
+    angkot++;
+}
