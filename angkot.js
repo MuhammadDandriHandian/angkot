@@ -55,17 +55,40 @@
 // }
 
 // pake while tapi ada pengecualian
-var angkot = 1;
-var jmlAngkot = 10;
-var beroperasi = 5;
+// var angkot = 1;
+// var jmlAngkot = 10;
+// var beroperasi = 5;
 
-while (angkot <= jmlAngkot){
-    if (angkot <= beroperasi && angkot != 5){
-        console.log("Angkot " + angkot + " Gass");
-    } else if (angkot == 6 || angkot == 8 || angkot == 5){
-        console.log("Angkot " + angkot + " Lembur");
-    } else {
-        console.log("Angkot " + angkot +" Mogok");
+// while (angkot <= jmlAngkot){
+//     if (angkot <= beroperasi && angkot != 5){
+//         console.log("Angkot " + angkot + " Gass");
+//     } else if (angkot == 6 || angkot == 8 || angkot == 5){
+//         console.log("Angkot " + angkot + " Lembur");
+//     } else {
+//         console.log("Angkot " + angkot +" Mogok");
+//     }
+//     angkot++;
+// }
+
+// pake switch
+var jmlAngkot = 10;
+var beroperasi = 4;
+
+for (angkot = 1; angkot <= jmlAngkot; angkot++){
+    switch (angkot){
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            console.log("Angkot No " + angkot + " gass");
+            break;
+        case 5:
+        case 7:
+            console.log("Angkot No " + angkot + " lembur");
+            break;
+        default:
+            console.log("Angkot No. " +angkot+ " mogok");
     }
-    angkot++;
 }
+
+
