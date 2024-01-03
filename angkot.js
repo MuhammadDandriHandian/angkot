@@ -39,17 +39,33 @@
 // }
 
 // pake while
+// var angkot = 1;
+// var jmlAngkot = 10;
+// var beroperasi = 5
+
+// while (angkot <= jmlAngkot){
+//     if (angkot <= beroperasi){
+//         console.log("Angkot No. " +angkot+ " siap beroperasi");
+//     } else if (angkot == 8 || angkot == 10){
+//         console.log("Angkot No. " +angkot+ " sedang lembur");
+//     } else {
+//         console.log("Angkot No. " +angkot+ " sedang tidak dapat beroperasi");
+//     }
+//     angkot++;
+// }
+
+// pake while tapi ada pengecualian
 var angkot = 1;
 var jmlAngkot = 10;
-var beroperasi = 5
+var beroperasi = 5;
 
 while (angkot <= jmlAngkot){
-    if (angkot <= beroperasi){
-        console.log("Angkot No. " +angkot+ " siap beroperasi");
-    } else if (angkot == 8 || angkot == 10){
-        console.log("Angkot No. " +angkot+ " sedang lembur");
+    if (angkot <= beroperasi && angkot != 5){
+        console.log("Angkot " + angkot + " Gass");
+    } else if (angkot == 6 || angkot == 8 || angkot == 5){
+        console.log("Angkot " + angkot + " Lembur");
     } else {
-        console.log("Angkot No. " +angkot+ " sedang tidak dapat beroperasi");
+        console.log("Angkot " + angkot +" Mogok");
     }
     angkot++;
 }
